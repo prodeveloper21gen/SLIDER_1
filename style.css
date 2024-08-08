@@ -1,0 +1,117 @@
+body{
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(145deg, rgb(89, 0, 0), rgb(0, 3, 60));
+    color: #ffffff;
+    text-align: center;
+}
+
+h1{
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.box{
+    position: relative;
+    width: 80%;
+    max-width: 700px;
+    overflow: hidden;
+    border-right: 2px solid #ffffff;
+    border-left: 2px solid #ffffff;
+    background-color: #0a091454;
+    padding: 20px;
+    height: 80%;
+    animation: boxanimcolor 5s infinite;
+}
+
+.blok{
+    font-size: 20px;
+    display: flex;
+    transition: 0.2s;
+}
+
+.mid{
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+}
+
+button{
+    position: absolute;
+    top: 46%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    z-index: 1;
+    width: 60px;
+    border-radius: 10px;
+}
+
+.prev{
+    left: 200px;
+}
+
+.next{
+    right: 200px;
+}
+
+button:hover{
+    background-color: rgba(128, 128, 128, 0.274);
+}
+
+.blok img{
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+    margin: 20px 0;
+    border: 1px solid white;
+}
+.name{
+    width: 330px;
+    margin: auto;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.479);
+    border: 1px solid white;
+}
+.p1{
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.348);
+    border: 1px solid white;
+}
+.slide_number{
+    position: absolute;
+    left: 47%;
+    top: -10px;
+}
+.snake{
+    background-color: #ffffff;
+    border-radius: 20px;
+    align-content: center;
+    margin: auto;
+    width: 3%;
+    height: 4%;
+    color: black;
+    font-weight: 900;
+    border: 2px solid rgb(0, 0, 0);
+}
+@keyframes boxanimcolor{
+    0%{
+        background-color: #0a091454;
+    }
+    50%{
+        background-color: #00fffb11;
+    }
+    100%{
+        background-color: #0a091454;
+    }
+}
